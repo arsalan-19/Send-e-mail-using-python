@@ -2,4 +2,14 @@
 
 The repository contains the code to send emails using different source mail portals i.e. Gmail and Outlook
 
-1. For Gmail sender email authentication "App password" is needed which we can get by following the steps explained here (Link: https://support.google.com/mail/answer/185833?hl=en)
+Following are the minor changes need to be done in the code while using different mail services 
+
+1. To send using Gmail:
+(a) For Gmail sender email authentication "App password" is needed which we can get by following the steps explained here (Link: https://support.google.com/mail/answer/185833?hl=en)
+(b) While creating session change the host_name to 'smtp.gmail.com' and port number to '587'
+session = smtplib.SMTP('smtp.gmail.com', 587)
+
+2. To send using Outlook:
+(a) Here login email and password is sufficient (No need for any other details)
+(b) While creating session change the host_name and port number as per displayed in the Outlook Mail >> Settings >> Search for "POP and IMAP" >> SMTP setting 
+session = smtplib.SMTP('smtp.office365.com', 587)
