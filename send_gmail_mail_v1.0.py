@@ -16,8 +16,8 @@ from os.path import basename
 mail_content = '''Hello,\nThis is a simple mail. 1 attachments is there the mail and is sent using Python SMTP library.\nThank You'''
 
 #The e-mail addresses
-sender_address = 'abc@gmail.com'
-receiver_address = 'def@outlook.com'
+sender_address = 'sender@gmail.com'
+receiver_address = 'recipient@mailservice.com'
 
 # To Login into Gmail "app passwords" are used (Link: https://support.google.com/mail/answer/185833?hl=en)
 sender_pass = "***16 character code here***"
